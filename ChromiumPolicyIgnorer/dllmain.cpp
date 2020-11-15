@@ -73,7 +73,7 @@ LSTATUS WINAPI Hook_RegQueryInfoKeyW(HKEY hKey, LPWSTR lpClass, LPDWORD lpcchCla
 					*lpcbMaxValueLen = 0;
 				}
 
-				MessageBoxW(NULL, keyPath.c_str(), L"Successfully spoofed:", MB_OK); // Debug
+				//MessageBoxW(NULL, keyPath.c_str(), L"Successfully spoofed:", MB_OK); // Debug
 				return result;
 			}
 		}
