@@ -1,5 +1,5 @@
 # Chromium Policy Ignorer
-Sometimes, your boss wants to block you from opening dev tools. What a jerk! Using this tool to *jailbreak* your Chromium browser (Chrome, Edge, Brave, etc.) is possible, but should only be done with allowance by your organisation.
+Using this tool to *jailbreak* your Chromium browser (Chrome, Edge, Brave, etc.) is possible, but should only be done with allowance by your organisation.
 
 Ignore Chromium's policy registry keys by hooking into `RegQueryInfoKeyW` (WINAPI function), so that it returns zero results when querying the policy keys.
 
