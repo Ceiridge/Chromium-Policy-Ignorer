@@ -125,7 +125,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 		case DLL_THREAD_DETACH:
 			break;
 		case DLL_PROCESS_DETACH:
-			CreateThread(nullptr, NULL, (LPTHREAD_START_ROUTINE)Main, hModule, NULL, NULL);
+			CreateThread(nullptr, NULL, (LPTHREAD_START_ROUTINE)UnHook, hModule, NULL, NULL);
 			break;
 	}
 
